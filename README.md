@@ -1,9 +1,7 @@
 # MarvelVerse
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 MarvelVerse is an API-based web application that leverages the Marvel RESTful API to fetch and display comprehensive Marvel character data. This project is built using the MERN stack (MongoDB, Express.js, React, Node.js) and showcases advanced features such as search functionality with debouncing.
 
-Currently, two official plugins are available:
 ## Table of Contents
 - [Features](#features)
 - [Technologies Used](#technologies-used)
