@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.character-data {
+    margin: 28px auto 0 auto;
+}
+
+.character-main-info {  
+    width: 100%;
+    background-color: #202020;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.character-id-name-desc {
+    width: 65%;
+    color: white;
+    padding-right: 55px;
+    padding-left: 55px;
+    margin-bottom: 10px;
+}
+
+.character-id {
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.character-name {
+    font-family: "Roboto Condensed", sans-serif;
+    margin-bottom: 10px;
+    font-size: 50px;
+}
+
+.character-desc {
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 0.5px;
+}
+
+.character-thumbnail {
+    padding-right: 55px;
+}
+
+.comics {
+    width: 100%;
+    padding: 25px 20vh;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+}
+
+.comics-heading {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 25px;
+    margin-top: 25px;
+    margin-bottom: 5px;
+    width: 100%;
+    padding: 10px 30px;
+    color: white;
+    border-top: 4px solid #EE171F;
+    background: linear-gradient(-45deg, transparent 10px, #202020 0);
+}
+
+.comics li {
+    padding-left: 10px;
+    list-style: none;   
+    font-size: 17px;
+    margin: 4px 8px;
+    width: max-content;
+    border-bottom: 2px solid #EE171F;
+}
+
+.comics-heading {
+    cursor: pointer;
+}
+
+.comics-list {
+    list-style: none;
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.comics-list.open {
+    max-height: 200px;
+}
+
+.some-url {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+    .character-main-info {
+        flex-direction: column;
+        padding: 35px 0;
+        align-items: first baseline;
+    }
+
+    .character-id-name-desc {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    .character-thumbnail img {
+        width: 240px;
+        height: 240px;
+    }
+
+    .character-thumbnail {
+        padding: 0 0 0 50px;
+        width: 100%;
+    }
+
+    .comics {
+        padding: 25px 8vh;
+    }
+}

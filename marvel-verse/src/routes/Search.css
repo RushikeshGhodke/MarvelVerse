@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.search-main {
+    padding-top: 120px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.input-icon {
+    width: 5%;
+}
+
+.search-bar {
+    width: 95%;
+    border: none;
+    border-bottom: 2px solid #151515;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 5px;
+}
+
+.search-bar::selection {
+    border: none;
+}
